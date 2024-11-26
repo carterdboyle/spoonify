@@ -13,11 +13,15 @@ Click on a recipe from the list to reveal it in the main recipe information fram
 
 ![image](https://github.com/user-attachments/assets/6acf0e5a-c0fd-4797-837a-ce5f4a2bc00b)
 
+---
+
 ### Sorting the Titles Alphabetically
 
 The SORT button at the top of the results view will sort and un-sort the results upon clicking and re-clicking, respectively. 
 
 ![image](https://github.com/user-attachments/assets/7499c42f-a673-4fa6-8772-37bb2daa4fcd)
+
+---
 
 ### Pagination of the Results
 
@@ -25,11 +29,15 @@ If the results are greater than the limit to be displayed in the results view th
 
 ![image](https://github.com/user-attachments/assets/dbd78312-7cf0-44fb-9877-12e4ddbb3e5e)
 
+---
 
 ### Adjusting the # of servings servings
+
 ![image](https://github.com/user-attachments/assets/5b1af666-3e05-4c37-aa26-cbd2440b411f)
 
 Within the recipe view, the user has the capability to adjust the number of servings, depending on how many people they may want to feed with there recipe or for a certain amount of days they may want the meal to last for. Clicking the buttons in the above figure will allow the user to decrease and increase the servings and the quantities of each of the ingredients will automatically update. 
+
+---
 
 ### Saving a recipe to a bookmark
 
@@ -38,9 +46,12 @@ The user is able to click on the bookmark button and save a recipe to a locally-
 ![image](https://github.com/user-attachments/assets/716989bc-04c1-4cd6-b684-fd08c0c3d795)
 
 The recipes then show up on the list that appears when hovering over the view bookmarks button. If the user clicks on a recipe from this bookmarks list it will automatically take them to the bookmarked recipe.
+
 ![image](https://github.com/user-attachments/assets/03841558-ded5-4d63-a6a4-3fe78a5987c3)
 
 A user can also **remove** a bookmark by simply clicking the bookmark button again.
+
+---
 
 ### Uploading a custom recipe to the API
 
@@ -51,6 +62,8 @@ Filling in the form with specified in placeholder text and format shown in *Ingr
 ![image](https://github.com/user-attachments/assets/796bdf46-9ef5-446c-ac57-fa6b317e3333)
 
 In addition, this process will add the user-generated recipe as a bookmark.
+
+---
 
 ### Deleting a user-generated Recipe
 
