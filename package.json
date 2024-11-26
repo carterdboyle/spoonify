@@ -1,0 +1,21 @@
+{
+  "name": "spoonify",
+  "version": "1.0.0",
+  "description": "Recipe searching application",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Carter Boyle",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.39.0",
+    "fracty": "^1.0.11",
+    "regenerator-runtime": "^0.14.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.1",
+    "parcel": "^2.13.1"
+  }
+}
