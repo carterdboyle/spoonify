@@ -2,6 +2,28 @@
 
 Browse through thousands of online recipes and upload custom recipes in this web application. 
 
+## How to Install
+
+To install the application ensure that Node.js is installed with Node Package Manager (npm) [https://nodejs.org/en/download/prebuilt-installer].
+Once installed, run 
+
+```
+  npm install
+```
+
+from a terminal instance in the base directory to install all required node modules. The package.json file contains a script for running the server and another for building the distro version c/w Babel and polyfilling. 
+To run the web application locally, type
+
+```
+  npm start
+```
+
+into the terminal instance. This will run the server locally at https://127.0.0.1:1234, which can be navigated to in a browser to see the web application. 
+
+## Viewing the Application online
+
+I have published the dist folder from building with Babel and parcel (with poly-fill for older browsers) at [https://spoon-ify.netlify.app] for easy viewing if desired.
+
 ## Features
 
 ### Recipe browsing
