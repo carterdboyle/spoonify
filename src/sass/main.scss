@@ -5,3 +5,84 @@
 @use 'searchResults';
 @use 'recipe';
 @use 'upload';
+
+/* Desktop-lock only when we decide (JS adds .mobile-locked) */
+html.mobile-locked,
+body.mobile-locked {
+  min-width: 1200px;
+  /* force desktop width */
+  overflow-x: auto;
+  /* horizontal scroll on mobile */
+}
+
+/* Banner (mobile-only, fixed top) */
+.dg {
+  position: fixed;
+  inset: 0 auto auto 0;
+  right: 0;
+  z-index: 9999;
+  background: #fffceb;
+  color: #222;
+  border-bottom: 1px solid #e2d9a6;
+  transform: translateY(0);
+  transition: transform .2s ease-out;
+}
+
+.dg.hidden {
+  display: none;
+}
+
+.dg .dg-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 10px 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font: 14px/1.35 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+.dg .dg-sub {
+  opacity: 0.8;
+}
+
+.dg .dg-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.dg button {
+  border: 1px solid #c9ced6;
+  background: #fff;
+  padding: .45rem .8rem;
+  border-radius: 10px;
+  font: inherit;
+  cursor: pointer;
+}
+
+/* Don’t show the banner on wide screens (actual desktops) */
+@media (min-width: 1024px) {
+  .dg {
+    display: none !important;
+  }
+}
+
+/* Make sure the content below isn’t covered by the banner */
+html.dg-open body {
+  padding-top: 42px;
+}
+
+@media (min-width: 420px) {
+  html.dg-open body {
+    padding-top: 44px;
+  }
+}
+
+/* Print: never show the banner */
+@media print {
+  .dg {
+    display: none !important;
+  }
+}
